@@ -1,5 +1,5 @@
 import React from 'react'
-import video from '../assets/pexels-zlatin-georgiev-5607650.mp4';
+import video from '../assets/background.mp4';
 import logo from '../assets/WhatsApp Image 2023-01-01 at 2.17.06 PM.jpeg';
 import animatedImage from '../assets/img-a.png';
 import aboutImage from '../assets/about-img.png';
@@ -13,7 +13,7 @@ function main() {
         </div>
         <div className="container main">
           <div className="navbar">
-            <img src={logo} alt="logo" className="logo" width="50px" height="50px" />
+            <img src={logo} alt="logo" className="logo" width="70px" height="70px" />
             <nav>
               <ul>
                 <li><a href='home'>Home</a></li>
