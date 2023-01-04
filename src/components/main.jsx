@@ -1,33 +1,38 @@
 import React from 'react'
 import video from '../assets/pexels-zlatin-georgiev-5607650.mp4';
-import image from '../assets/download.jpg';
+import logo from '../assets/WhatsApp Image 2023-01-01 at 2.17.06 PM.jpeg';
+import animatedImage from '../assets/img-a.png';
 
 function main() {
   return (
-    <div className='main'>
-        {/* <video src={video} autoPlay loop muted/> */}
-        <div className='navBar'>
-          <div className='icon'>
-            <img src={image} alt="abc" />
-          </div>
-          <div className='list'>
+    <div className="page">
+      <div className='main'>
+        <video src={video} autoPlay loop muted />
+      </div>
+      <div className="container main">
+        <div className="navbar">
+          <img src={logo} alt="logo" className="logo" width="50px" height="50px" />
+          <nav>
             <ul>
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Service</li>
-              <li>Contact</li>
+              <li><a href='home'>Home</a></li>
+              <li><a href='home'>About Us</a></li>
+              <li><a href='home'>Services</a></li>
+              <li><a href='home'>Contact Us</a></li>
             </ul>
+          </nav>
+        </div>
+        <div className="row">
+          <div className="col">
+            <h1>HI, I'M JEETENDER</h1>
+            <p>A mobile app & web developer & Digital Marketer</p>
+          </div>
+          <div className="col">
+            <div className="card">
+              <img src={animatedImage} alt="animatedImage"/>
+            </div>
           </div>
         </div>
-        <div className="containt">
-            <div className='subContaint'>
-                <h1>HI, I'M JEETENDER</h1>
-                <p>A mobile & web Developer & Digital Marketer</p>
-            </div>
-            <div className='image'>
-                <img src={image} alt='animated'/>
-            </div>
-        </div>
+      </div>
     </div>
   )
 }

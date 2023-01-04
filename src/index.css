@@ -2,69 +2,76 @@
   margin: 0;
   padding: 0;
 }
-
+.page{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
 .main {
   width: 100%;
   height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
 video {
   width: 100%;
   height: 100vh;
   object-fit: cover;
 }
-
-.containt {
-  position: absolute;
+.container{
   width: 100%;
   height: 100vh;
-  top: 0;
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-  /* color: white; */
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
 }
-
-.subContent {
+.navbar{
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  cursor: pointer;
+  border-radius: 50px;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 33px;
+}
+.row{
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+.col{
   display: flex;
   flex-direction: column;
-  width: 50%;
-  justify-content: center;
+  height: 88%;
   align-items: center;
+  justify-content: center;
 }
-
-h1 {
-  position: absolute;
-  width: 568px;
-  height: 32px;
-  left: 108px;
-  top: 302px;
-
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
+h1{
+  color: #fff;
   font-size: 64px;
-  line-height: 32px;
 }
-
-p {
-  position: absolute;
-  max-width: 550px;
-  /* height: 116px; */
-  left: 108px;
-  top: 379px;
-
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
+P{
+  color: #fff;
   font-size: 48px;
-  /* line-height: 32px; */
+  font-weight: 400;
+  line-height: 55px;
+  padding-left: 10%;
 }
-
-.navBar{
-  display: flex;
-}
-.list{
-  display: flex;
+.card{
+  height: 100%;
 }
